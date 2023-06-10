@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Przewidywanie zanieczyszczenia powietrza w Ostrowie Wielkopolskim">
+    <meta name="keywords" content="zanieczyszczenie, applikacja, przewidywania, AI, Ostrów, Ostrów WIelkopolski, ZAP, ZST, pogoda">
+    <meta property="og:title" content="ZAPogoda">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https:/zapogoda.xyz">
+    <meta property="og:image" content="/images/thumb.png">
+    <meta property="og:description" content="Przewidywanie zanieczyszczenia powietrza w Ostrowie Wielkopolskim">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/style.css">
+    <title>ZAPogoda</title>
+</head>
+<body>
+    <div class="header-wrapper">
+        <div class="content-wrapper">
+            <div class="header">
+                <input type="checkbox" name="hamburger-checkbox" id="hamburger-checkbox" class="hamburger-checkbox">
+                <div class="logo">
+                    <a href="/home" target="_self">
+                        <img src="/images/logo.svg" height="35" class="logo-image" alt="ZAPogoda">
+                    </a>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li><a href="/home" target="_self">Strona główna</a></li>
+                        <li><a href="/app" target="_self">Przewidywania</a></li>
+                        <li><a href="/about" target="_self">O projekcie</a></li>
+                    </ul>
+                </div>
+                <label for="hamburger-checkbox" class="hamburger-menu">
+                    <span class="hamburger-bar1"></span>
+                    <span class="hamburger-bar2"></span>
+                    <span class="hamburger-bar3"></span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="main-wrapper">
+        <div class="content-wrapper">
+            <div class="main">
+                <br><h1>O Projekcie</h1>
+                <br>
+                <p class="font-desc"><strong>ZAPogoda</strong> to projekt stacji pogodowej 
+                    oraz aplikacji internetowej, które razem pozwalają na 
+                    przewidywanie stężenia zanieczyszczeń 
+                    powietrza w czasie rzeczywistym.</p>
+                <p class="font-desc">Stacja pogodowa zbiera pomiary przy pomocy czujników oraz 
+                    przesyła je do naszej bazy danych.<br> Informacje o temperaturze, 
+                    wilgotności powietrza, prędkości wiatru oraz zawartości pyłów 
+                    zawieszonych i tlenków węgla są następnie wykorzystywane przez 
+                    program do przewidywania przyszłej jakości powietrza przy 
+                    pomocy sztucznej inteligencji.</p><br>
+
+                <figure class="stacja-fig">
+                    <img class="stacja-img" src="/images/stacja.jpg" alt="Nasza stacja pomiarowa">
+                    <figcaption>
+                        Nasza stacja pomiarowa
+                    </figcaption>
+                </figure>
+
+                <br>
+                <p class="font-desc">Nasz produkt ma za zadanie informować 
+                    użytkowników o jakości powietrza w ciągu dnia, 
+                    dzięki czemu będą mogli ograniczyć 
+                    ekspozycję na zanieczyszczenia, wybierając 
+                    najlepszy czas na np. wyjście na spacer, kiedy 
+                    powietrze jest najczystsze.</p>
+                <p class="font-desc">
+                    Program korzysta z sieci neuronowej utworzonej przy użyciu biblioteki <a href="https://www.npmjs.com/package/@tensorflow/tfjs" target="_blank">TensorFlow.js</a>,
+                    aby przewidywać stężenia pyłów zawieszonych PM10 i PM2.5
+                    oraz tlenków węgla, bazując na temperaturze i wilgotności powietrza,
+                    prędkości wiatru oraz stężeniu zanieczyszczeń z poprzednich pomiarów.<br><br>
+                    Do szkolenia sztucznej inteligencji wykorzystujemy dane przesyłane ze stacji pogodowej.<br>
+                    Informacje o obecnym i prognozowanym na co godzinę stanie powietrza 
+                    są prezentowane w naszej aplikacji.
+                </p><br><br>
+
+            </div>
+        </div>
+    </div>
+    <div class="footer-wrapper">
+        <div class="content-wrapper">
+            <div class="footer">
+                <div>
+                    Autorzy: Jakub Stasierski, Mateusz Pasik, Artur Płóciennik
+                </div>
+                <div>
+                    Kontakt: jakubstasierski@gmail.com
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

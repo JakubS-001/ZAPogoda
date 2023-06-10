@@ -1,0 +1,140 @@
+.data-table {
+    margin-top: 150px;
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+.data-table tr {
+    width: 100%;
+}
+
+.data-table th, .data-table td {
+    border: 1px solid rgb(255, 255, 255);
+    text-align: center;
+    height: 50px;
+    padding: 5px;
+    color: white;
+}
+
+.data-table tr th:nth-of-type(1) {
+    background-color: rgb(96, 96, 96);
+}
+.data-table tr td:nth-of-type(1) {
+    background-color: rgb(128, 128, 128);
+}
+
+.data-table tr th:nth-of-type(2) {
+    background-color: rgb(221, 133, 38);
+}
+.data-table tr td:nth-of-type(2) {
+    background-color: rgb(255, 157, 52);
+}
+
+.data-table tr th:nth-of-type(3) {
+    background-color: rgb(41, 124, 201);
+}
+.data-table tr td:nth-of-type(3) {
+    background-color: rgb(52, 157, 255);
+}
+
+.data-table tr th:nth-of-type(4) {
+    background-color: rgb(136, 38, 192);
+}
+.data-table tr td:nth-of-type(4) {
+    background-color: rgb(164, 52, 255);
+}
+
+
+.data-table tr th:nth-of-type(5) {
+    background-color: rgb(41, 201, 26);
+}
+.data-table tr td:nth-of-type(5) {
+    background-color: rgb(52, 233, 36);
+}
+
+.data-table tr th:nth-of-type(6) {
+    background-color: rgb(211, 172, 0);
+}
+.data-table tr td:nth-of-type(6) {
+    background-color: rgb(238, 194, 0);
+}
+
+.data-table tr th:nth-of-type(7) {
+    background-color: rgb(219, 38, 38);
+}
+.data-table tr td:nth-of-type(7) {
+    background-color: rgb(255, 43, 43);
+}
+
+.data-table tr th:nth-of-type(8) {
+    background-color: rgb(206, 38, 136);
+}
+.data-table tr td:nth-of-type(8) {
+    background-color: rgb(255, 52, 137);
+}
+
+.table-title th {
+    background-color: rgb(0, 0, 220) !important;
+}
+
+@media (max-width: 992px) {
+    .data-table {
+        font-size: 16px;
+    }
+    .table-headers {
+        display: block;
+        width: 30%;
+        float: left;
+    }
+    .table-headers tr {
+        width: 100%;
+        display: block;
+    }
+    .table-body {
+        float: left;
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+    }
+    .table-body tr {
+        flex: 1;
+    }
+    .data-table th, .data-table td {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 400px) {
+    .data-table {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 380px) {
+    .data-table {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 360px) {
+    .data-table {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 340px) {
+    .data-table {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 320px) {
+    .data-table {
+        font-size: 11px;
+    }
+}

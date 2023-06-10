@@ -1,0 +1,19 @@
+services:
+  db:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_DB: data
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data
+    ports:
+      - '4321:5432'
+  api:
+    image: zapogoda-api
+    volumes:
+      - ./model:/api/model
+    depends_on:
+      - db
+    ports:
+      - '8080:8080'
